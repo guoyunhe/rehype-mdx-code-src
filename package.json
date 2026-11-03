@@ -1,0 +1,43 @@
+{
+  "name": "rehype-mdx-code-src",
+  "version": "0.1.0",
+  "description": "Load source files referenced by MDX code block metadata",
+  "homepage": "https://github.com/guoyunhe/rehype-mdx-code-src#readme",
+  "license": "MPL-2.0",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me",
+    "url": "https://guoyunhe.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoyunhe/rehype-mdx-code-src.git"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@types/hast": "^3.0.0"
+  },
+  "peerDependencies": {
+    "unified": "^10.0.0 || ^11.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
